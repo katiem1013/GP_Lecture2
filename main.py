@@ -29,7 +29,16 @@ if flashlight == "use":
     yes_no = input("Would you like to search the room?").lower()
     if yes_no == "yes":
         print("There is a box on the counter, it looks as though it was recently added.")
-        input("Would you like to open it?").lower()
+        yes_no2 = input("Would you like to open it?").lower()
+
+        if yes_no2 == "yes":
+            print("key")
+
+        elif yes_no2 == "no":
+            print("they key was in there, tough luck")
+
+        else:
+            print("I do not understand")
 
     elif yes_no == "no":
         print("Then what was the point?")
